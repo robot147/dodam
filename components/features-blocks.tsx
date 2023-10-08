@@ -11,8 +11,9 @@ export default function FeaturesBlocks() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Explore the solutions</h2>
-            <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+            <h2 className="h2 mb-4">프로젝트 실적</h2>
+            <p className="text-xl text-gray-600"><span className="font-bold">스마트폰 Application 구축 경험</span> <br/> 국내 스마트폰 Application 기획 및 디자인 경험</p> <br/><br/>
+            <p className="text-xl text-gray-600"><span className="font-bold">'다양한 기획 및 디자인 경험'</span> <br/> 금융/증강현실(AR)/위치기반(GPS/LBS)등 최신 기술이 적용된 Application 기획, 디자인 참여</p>
           </div>
 
           {/* Items */}

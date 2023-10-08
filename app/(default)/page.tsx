@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Home - Simple',
+  title: '(주)도담정보',
   description: 'Page description',
 }
 
