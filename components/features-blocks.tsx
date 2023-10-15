@@ -1,9 +1,11 @@
+import Image from 'next/image'
+
 export default function FeaturesBlocks() {
   return (
-    <section className="relative">
+    <section id='two' className="relative">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-900 pointer-events-none" aria-hidden="true"></div>
+      <div className="absolute inset-0 md:mt-24 lg:mt-0 bg-gray-900 pointer-events-none" aria-hidden="true" style={{ top: '8%' }}></div>
       <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
@@ -13,113 +15,114 @@ export default function FeaturesBlocks() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">프로젝트 실적</h2>
             <p className="text-xl text-gray-600"><span className="font-bold">스마트폰 Application 구축 경험</span> <br/> 국내 스마트폰 Application 기획 및 디자인 경험</p> <br/><br/>
-            <p className="text-xl text-gray-600"><span className="font-bold">'다양한 기획 및 디자인 경험'</span> <br/> 금융/증강현실(AR)/위치기반(GPS/LBS)등 최신 기술이 적용된 Application 기획, 디자인 참여</p>
+          </div>
+
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center md:pb-20">
+            <p className="text-xl text-white"><span className="font-bold">'다양한 기획 및 디자인 경험'</span> <br/> 금융/증강현실(AR)/위치기반(GPS/LBS)등 최신 기술이 적용된 Application 기획, 디자인 참여</p>
           </div>
 
           {/* Items */}
-          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
+          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none">
 
             {/* 1st item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fillRule="evenodd">
-                  <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
-                  <g strokeWidth="2">
-                    <path className="stroke-current text-blue-300" d="M34.514 35.429l2.057 2.285h8M20.571 26.286h5.715l2.057 2.285" />
-                    <path className="stroke-current text-white" d="M20.571 37.714h5.715L36.57 26.286h8" />
-                    <path className="stroke-current text-blue-300" strokeLinecap="square" d="M41.143 34.286l3.428 3.428-3.428 3.429" />
-                    <path className="stroke-current text-white" strokeLinecap="square" d="M41.143 29.714l3.428-3.428-3.428-3.429" />  
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <Image src={ "/images/section1_1.png" } width={450} height="270" alt=''></Image>
             </div>
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fillRule="evenodd">
-                  <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
-                  <g strokeWidth="2" transform="translate(19.429 20.571)">
-                    <circle className="stroke-current text-white" strokeLinecap="square" cx="12.571" cy="12.571" r="1.143" />
-                    <path className="stroke-current text-white" d="M19.153 23.267c3.59-2.213 5.99-6.169 5.99-10.696C25.143 5.63 19.514 0 12.57 0 5.63 0 0 5.629 0 12.571c0 4.527 2.4 8.483 5.99 10.696" />
-                    <path className="stroke-current text-blue-300" d="M16.161 18.406a6.848 6.848 0 003.268-5.835 6.857 6.857 0 00-6.858-6.857 6.857 6.857 0 00-6.857 6.857 6.848 6.848 0 003.268 5.835" />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-
-            {/* 3rd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fillRule="evenodd">
-                  <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
-                  <g strokeWidth="2">
-                    <path className="stroke-current text-blue-300" d="M34.743 29.714L36.57 32 27.43 43.429H24M24 20.571h3.429l1.828 2.286" />
-                    <path className="stroke-current text-white" strokeLinecap="square" d="M34.743 41.143l1.828 2.286H40M40 20.571h-3.429L27.43 32l1.828 2.286" />
-                    <path className="stroke-current text-blue-300" d="M36.571 32H40" />
-                    <path className="stroke-current text-white" d="M24 32h3.429" strokeLinecap="square" />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-
-            {/* 4th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fillRule="evenodd">
-                  <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
-                  <g strokeWidth="2">
-                    <path className="stroke-current text-white" d="M32 37.714A5.714 5.714 0 0037.714 32a5.714 5.714 0 005.715 5.714" />
-                    <path className="stroke-current text-white" d="M32 37.714a5.714 5.714 0 015.714 5.715 5.714 5.714 0 015.715-5.715M20.571 26.286a5.714 5.714 0 005.715-5.715A5.714 5.714 0 0032 26.286" />
-                    <path className="stroke-current text-white" d="M20.571 26.286A5.714 5.714 0 0126.286 32 5.714 5.714 0 0132 26.286" />
-                    <path className="stroke-current text-blue-300" d="M21.714 40h4.572M24 37.714v4.572M37.714 24h4.572M40 21.714v4.572" strokeLinecap="square" />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-
-            {/* 5th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fillRule="evenodd">
-                  <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
-                  <g strokeWidth="2">
-                    <path className="stroke-current text-white" d="M19.429 32a12.571 12.571 0 0021.46 8.89L23.111 23.11A12.528 12.528 0 0019.429 32z" />
-                    <path className="stroke-current text-blue-300" d="M32 19.429c6.943 0 12.571 5.628 12.571 12.571M32 24a8 8 0 018 8" />
-                    <path className="stroke-current text-white" d="M34.286 29.714L32 32" />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-
-            {/* 6th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fillRule="evenodd">
-                  <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
-                  <g strokeWidth="2" strokeLinecap="square">
-                    <path className="stroke-current text-white" d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775" />
-                    <path className="stroke-current text-blue-300" d="M44.571 43.429H34.286M44.571 37.714H34.286" />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <Image src={ "/images/section1_2.png" } width={450} height="270" alt=''></Image>
             </div>
 
           </div>
 
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center pt-12 md:pb-12 md:pt-20">
+            <p className="text-xl text-white font-bold">'기획에서 서버 및 클라이언트 개발 경험'</p>
+            <p className="text-xl text-white">서비스 기획에서 서버 및 클라이언트 개발 참여</p>
+          </div>
+
+          {/* Items */}
+          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none">
+
+            {/* 1st item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <Image src={ "/images/section2_1.png" } width={450} height="270" alt=''></Image>
+            </div>
+
+            {/* 2nd item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <Image src={ "/images/section2_2.png" } width={450} height="270" alt=''></Image>
+            </div>
+            
+          </div>
+
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center pt-12 md:pb-12 md:pt-20">
+            <p className="text-xl text-white font-bold">'외환은행 캐나다 1Q Bank 시스템 개발'</p>
+            <p className="text-xl text-white">외환은행 캐나다 1Q Bank App 기획, 디자인, 개발 전과정과 운영을 수행</p>
+          </div>
+
+          {/* Items */}
+          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none">
+
+            {/* 1st item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <Image src={ "/images/section3_1.png" } width={450} height="270" alt=''></Image>
+            </div>
+
+            {/* 2nd item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <Image src={ "/images/section3_2.png" } width={450} height="270" alt=''></Image>
+            </div>
+            
+          </div>
+
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center pt-12 md:pb-12 md:pt-20">
+            <p className="text-xl text-white font-bold">'신한은행 써니뱅크 앱 개발'</p>
+            <p className="text-xl text-white">신한은행 써니뱅크 앱 서버 개발 참여</p>
+          </div>
+
+          {/* Items */}
+          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none">
+
+            {/* 1st item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <Image src={ "/images/section4_1.png" } width={450} height="270" alt=''></Image>
+            </div>
+
+            {/* 2nd item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <Image src={ "/images/section4_2.png" } width={450} height="270" alt=''></Image>
+            </div>
+            
+          </div>
+
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center pt-12 md:pb-12 md:pt-20">
+            <p className="text-xl text-white font-bold">'고객 친화적인 서비스 기획, 고객 편의성 고려'</p>
+            <p className="text-xl text-white">서비스 기획에서 서버 및 클라이언트 개발</p>
+          </div>
+
+          {/* Items */}
+          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none">
+
+            {/* 1st item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <Image src={ "/images/section5_1.png" } width={450} height="270" alt=''></Image>
+            </div>
+            
+          </div>
+
         </div>
+
+        <iframe
+            src={ 'http://www.dodaminfo.com:8081/result2.do' } 
+            allowFullScreen
+        />
+        {/* <iframe name="main" sandbox="allow-same-origin allow-scripts" src="./(주)도담정보_files/result2.html" width="100%" height="600px">지원하지 않습니다.</iframe> */}
       </div>
     </section>
   )

@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
-import Link from 'next/link'
+import { Link } from "react-scroll";
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
@@ -65,7 +65,19 @@ export default function MobileMenu() {
         >
           <ul className="px-5 py-2">
             <li>
-              <Link href="/signin" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Sign in</Link>
+              <Link to="one" spy={true} smooth={true} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">회사소개</Link>
+            </li>
+            <li>
+              <Link to="two" spy={true} smooth={true} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">프로젝트실적</Link>
+            </li>
+            <li>
+              <Link to="three" spy={true} smooth={true} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">고객사</Link>
+            </li>
+            <li>
+              <Link to="four" spy={true} smooth={true} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">오시는 길</Link>
+            </li>
+            {/* <li>
+              <Link to href="/signin" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Sign in</Link>
             </li>
             <li>
               <Link href="/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2" onClick={() => setMobileNavOpen(false)}>
@@ -74,7 +86,7 @@ export default function MobileMenu() {
                   <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fill="#999" fillRule="nonzero" />
                 </svg>
               </Link>
-            </li>
+            </li> */}
           </ul>          
         </Transition>
       </div>

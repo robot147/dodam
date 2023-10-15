@@ -1,6 +1,12 @@
+import Image from 'next/image'
+
+// const imageLoader = ({ src, width, quality }) => {
+//   return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+// }
+
 export default function Newsletter() {
   return (
-    <section>
+    <section id="four">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
 
@@ -37,19 +43,80 @@ export default function Newsletter() {
 
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">Want more tutorials & guides?</h3>
-                <p className="text-gray-300 text-lg mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente.</p>
-
-                {/* CTA form */}
-                <form className="w-full lg:w-auto">
-                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
-                    <input type="email" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your email…" aria-label="Your email…" />
-                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="#0">Subscribe</a>
+                <h3 className="h3 text-white mb-2">오시는 길</h3>
+                <p className="text-gray-300 text-lg mb-6">만드는 것은 <span className='font-bold'>아무나</span> 따라 할 수 있어도 <span className='font-bold'>“탁월하게”</span> 만드는 것은 <span className='font-bold'>아무나</span> 할 수 없습니다.</p>
+                <div className="relative flex flex-col p-6 bg-white rounded shadow-xl">
+                  <a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5441846&lng=126.952729&dlevel=12&enc=b64" target="_blank">
+                    <Image src={ "/images/map.png" } width="530" height="340" title="지도 크게 보기" style={{ verticalAlign: "top" }} alt=""></Image>
+                  </a>
+                  <div className="text-gray-600 flex text-font-xsl mt-2 md:mt-6 md:text-sm">
+                    <div>
+                      <a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5441846&lng=126.952729&dlevel=12&enc=b64" target="_blank">
+                        2023-10-15 <span style={{ color : '#e5e5e5' }}>|</span> 지도 크게 보기
+                      </a>
+                    </div>
+                    <div style={{ marginLeft: 'auto' }}>
+                      <a href="https://www.navercorp.com/" target="_blank">
+                        © <span style={{ color: "#2db400" }}>NAVER Corp.</span>
+                      </a>
+                    </div>
                   </div>
-                  {/* Success message */}
-                  {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                  <p className="text-sm text-gray-400 mt-3">No spam. You can unsubscribe at any time.</p>
-                </form>
+                </div>
+
+                {/* 주소 및 기본 정보 */}
+                <div className="relative flex flex-col p-6 bg-white rounded shadow-xl mt-12">
+                  <div className='flex'>
+                    <div style={{ minWidth: '70px', textAlign: 'center'}}>
+                      주소
+                    </div>
+                    <div>
+                      서울시 마포구 공덕동 456 한국사회복지회관 르네상스 타워 1607 (우편번호) 121-706
+                    </div>
+                  </div>
+                  <div className='flex'>
+                    <div style={{ minWidth: '70px', textAlign: 'center'}}>
+                      전화
+                    </div>
+                    <div>
+                      070-7151-1032
+                    </div>
+                  </div>
+                  <div className='flex'>
+                    <div style={{ minWidth: '70px', textAlign: 'center'}}>
+                      이메일
+                    </div>
+                    <div>
+                      dodaminfo@gmail.com
+                    </div>
+                  </div>
+                </div>
+                
+                {/* 교통정보 */}
+                <div className="relative flex flex-col p-6 bg-white rounded shadow-xl mt-12">
+                  <div className='flex'>
+                    <div style={{ minWidth: '70px', textAlign: 'center'}}>
+                      지하철
+                    </div>
+                    <div>
+                      6호선 공덕역 도보 1분, 5호선 공덕역 도보 2분, 공항철도 공덕역 도보 3분
+                    </div>
+                  </div>
+                  <div className='flex'>
+                    <div style={{ minWidth: '70px', textAlign: 'center'}}>
+                      버스
+                    </div>
+                    <div>
+                      ① 마을버스 마포17, 마포02, 마포01, 마포10, 용산04, 마포11, 마포12, 마포03 <br/>
+                      ② 일반 1002 <br/>
+                      ③ 간선급행 8601 <br/>
+                      ④ 공항버스 6702, 6015, 6701 <br/>
+                      ⑤ 광역 2500 <br/>
+                      ⑥ 간선 N16, 163, 263, 604, 261, 110A, 740, 110B, 260, 160, 600, 405 <br/>
+                      ⑦ 지선 1711, 7013A, 7611, 7013B, 7016, 7613, 2016
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
             </div>

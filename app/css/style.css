@@ -19,3 +19,11 @@
 .cotgy {
     animation: float 3s ease-in-out infinite;
 }
+
+.text-font-xsl {
+    font-size: x-small;
+}
+
+.header-list > li > a:hover {
+    cursor: pointer;
+}
