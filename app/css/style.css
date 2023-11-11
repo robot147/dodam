@@ -27,3 +27,13 @@
 .header-list > li > a:hover {
     cursor: pointer;
 }
+
+.features-page {
+    height: 75rem;
+}
+
+@media (min-width: 768px) {
+    .md\:features-page {
+        height: 50rem;
+    }
+}
