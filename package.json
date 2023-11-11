@@ -2,14 +2,12 @@
   "name": "simple-next",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://robot147.github.io/dodam",
   "scripts": {
     "dev": "next dev -p 9711",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
