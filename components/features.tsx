@@ -5,6 +5,7 @@ import { Transition } from '@headlessui/react'
 import Image from 'next/image'
 import businessOne from '@/public/images/business_1.svg'
 import businessTwo from '@/public/images/business_2.svg'
+import businessThree from '@/public/images/business_3.svg'
 
 export default function Features() {
   
@@ -126,7 +127,7 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded cotgy" src={businessOne} width={500} height="462" alt="business" />
+                      <Image className="md:max-w-none mx-auto rounded cotgy" src={businessOne} width={500} height="506" alt="business" />
                       {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={businessOne} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
                   </Transition>
@@ -145,7 +146,7 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded cotgy" src={businessTwo} width={500} height="462" alt="business" />
+                      <Image className="md:max-w-none mx-auto rounded cotgy" src={businessThree} width={500} height="506" alt="business" />
                       {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                     </div>
                   </Transition>

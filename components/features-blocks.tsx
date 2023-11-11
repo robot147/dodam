@@ -118,9 +118,15 @@ export default function FeaturesBlocks() {
 
         </div>
 
+        {/* Section header */}
+        <div className="max-w-3xl mx-auto text-center pt-12 md:pb-12 md:pt-20">
+          <p className="text-xl text-white font-bold">(주)도담정보의 연도별 프로젝트 실적</p>
+        </div>
+
         <iframe
-            src={ 'http://www.dodaminfo.com:8081/result2.do' } 
+            src={`http://www.dodaminfo.com:8081/result2.do`}
             allowFullScreen
+            style={{ width: '72rem', height: '762px', paddingBottom: '50px' }}
         />
         {/* <iframe name="main" sandbox="allow-same-origin allow-scripts" src="./(주)도담정보_files/result2.html" width="100%" height="600px">지원하지 않습니다.</iframe> */}
       </div>
